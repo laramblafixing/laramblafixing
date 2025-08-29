@@ -86,7 +86,7 @@ body {
 }
 
 .logo {
-  height: 2.5rem;
+  height: 4rem;
   width: auto;
 }
 
@@ -97,6 +97,7 @@ body {
 
 .nav-item {
   background: none;
+  font-size: 1.15em;
   border: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -165,7 +166,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="%23f0f0f0"/><text x="600" y="400" text-anchor="middle" font-size="24" fill="%23666">Modern smartphone repair workshop</text></svg>');
+  background-image: url('DSC_0301.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +176,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(166, 201, 70, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .hero-content {
@@ -187,7 +188,6 @@ body {
 .hero-logo {
   width: 12rem;
   height: auto;
-  margin-bottom: 2rem;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
@@ -199,17 +199,17 @@ body {
 }
 
 .hero-title {
+  margin-top: -2em;
   font-size: 2rem;
   font-weight: 800;
-  color: #fefefe;
-  margin-bottom: 2rem;
+  color: #3B3B3B;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 0 1rem;
 }
 
 .hero-location {
   font-size: 1.25rem;
-  color: #fefefe;
+  color: #3B3B3B;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -221,6 +221,15 @@ body {
 
 .section-alt {
   background: #ccda6e;
+}
+
+#impresion3d {
+  min-height: 80vh;
+  background-image: url('3dfondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
 }
 
 .section-header {
@@ -250,7 +259,8 @@ body {
 
 .section-subtitle {
   font-size: 1.25rem;
-  color: #6e5230;
+  margin-top: -1.05em;
+  color: #3B3B3B;
 }
 
 /* Services Grid */
@@ -335,7 +345,7 @@ body {
 /* Gallery Grid */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -351,6 +361,13 @@ body {
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
+  overflow: hidden; /* evita que la imagen sobresalga */
+}
+
+.imagentrabajo{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* mantiene proporción y no sobresale */
 }
 
 .gallery-item:hover {
@@ -410,6 +427,32 @@ body {
   color: #3b3b3b;
 }
 
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontal */
+  align-items: center;     /* Centra vertical dentro del contenedor */
+  height: 120px;           /* Altura del contenedor */
+}
+
+.botonreview {
+  background-color: #ffffff;
+  color: #3b3b3b;
+  border: none;
+  padding: 24px 32px;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 28px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  margin-top: 80px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.botonreview:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transform: translateY(-2px);
+}
+
 /* Contact Grid */
 .contact-grid {
   display: grid;
@@ -456,11 +499,13 @@ body {
 
 .map-container {
   background: #ccda6e;
-  border: 2px solid #a6c946;
   border-radius: 1.5rem;
   padding: 1rem;
 }
 
+.mapa{
+  border-radius: 1.5rem;
+}
 .map-placeholder {
   background: #fefefe;
   border-radius: 1rem;
@@ -486,16 +531,14 @@ body {
 
 /* Footer */
 .footer {
-  background: #ccda6e;
-  border-top: 2px solid #a6c946;
+  background: #f8f8f8;
   padding: 2rem 0;
   text-align: center;
 }
 
 .footer-logo {
-  height: 2.5rem;
+  height: 5rem;
   width: auto;
-  margin-bottom: 1.5rem;
 }
 
 .footer p {
@@ -513,7 +556,7 @@ body {
   }
 
   .hero-logo {
-    width: 20rem;
+    width: 32rem;
   }
 
   .hero-subtitle {
