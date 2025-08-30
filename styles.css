@@ -501,6 +501,17 @@ body {
   background: #ccda6e;
   border-radius: 1.5rem;
   padding: 1rem;
+  width: 100%;
+  max-width: 1200px; /* O lo que quieras */
+  margin: 0 auto;
+}
+
+.mapa, .map-container iframe {
+  width: 100%;       /* Ocupa todo el ancho del contenedor */
+  max-width: 100%;   /* No se desborda */
+  height: 100%;      /* Mantiene la altura del contenedor */
+  border-radius: 1.5rem;
+  display: block;    /* Evita margenes internos extra */
 }
 
 .mapa{
